@@ -1,0 +1,249 @@
+{%- capture section_style -%}
+    {%- if section.settings.color_bg != 'rgba(0,0,0,0)' -%}
+        background-color: {{ section.settings.color_bg }};
+    {%- endif -%}
+    {%- if section.settings.padding_block != blank -%}
+        padding: {{section.settings.padding_block}};
+    {%- endif -%}
+    {%- if section.settings.margin_block != blank -%}
+        margin: {{section.settings.margin_block}};
+    {%- endif -%}
+    {%- if section.settings.contact-form-bg -%}
+        background: url({{ section.settings.contact-form-bg | img_url: 'master'}}) center center no-repeat;
+        background-size: cover;
+    {%- endif -%}
+{%- endcapture -%}
+<div class="vela-section page-contact_form1 overflow-hidden" {% if section_style%}style="{{ section_style }}"{% endif%}>
+    <div class="container{% if section.settings.full_with %}-fluid{% endif %} mb-5 p-xl-3">
+        <div class="vela-section__inner">    
+            <div class="contact-form__content">
+                <div class="text-center mb-5 pb-lg-3">
+                    {%- if section.settings.heading != blank -%}
+                        <h2 class="contact-form__title mb-2">
+                            {{ section.settings.heading }}
+                            </h2>
+                    {%- endif -%}
+                    {%- if section.settings.subheading != blank -%}
+                            <div class="contact-form__sub-title sub-heading mx-auto">
+                                {{ section.settings.subheading }}
+                            </div>
+                    {%- endif -%}
+                </div>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-5">
+                        <div class="contact_form--infor pe-lg-4">
+                            <div class="contact_form__infor contact_form__infor--1 map-info position-relative">
+                                {%- assign contactinfoDesc = section.settings.contactinfo_desc -%}
+                                {%- assign contactinfoAdd = section.settings.contactinfo_add -%}
+                                {%- assign contactinfoPhone = section.settings.contactinfo_phone -%}
+                                {%- assign contactinfoEmail = section.settings.contactinfo_email -%}
+                                {%- assign contactinfoTime = section.settings.contactinfo_time -%}
+                                {%- if section.settings.contactinfo_title != blank -%}
+                                    <h3 class="map-info__title mb-2">{{ section.settings.contactinfo_title }}</h3>
+                                {%- endif -%}
+                                <div class="map-info__content">
+                                    {% if contactinfoDesc != blank %}
+                                        <div class="map-info__item map-info__desc mb-4">{{ contactinfoDesc }}</div>
+                                    {% endif %}
+                                    {% if contactinfoAdd != blank %}
+                                        <div class="map-info__item map-info__address d-flex mb-3 mb-xl-4">
+                                            <i class="icons me-3">
+                                                {% include 'icons', icon: 'map-marker' %}
+                                            </i>
+                                            <div>
+                                                {{ contactinfoAdd }}
+                                            </div>
+                                        </div>
+                                    {% endif %}    
+                                    {% if contactinfoPhone != blank %}
+                                        <div class="map-info__item map-info__phone d-flex mb-3 mb-xl-4">
+                                            <i class="icons me-3">
+                                                {% include 'icons', icon: 'phone' %}
+                                            </i>
+                                            <div>
+                                                {{ contactinfoPhone }}
+                                            </div>
+                                        </div>
+                                    {% endif %}    
+                                    {% if contactinfoEmail != blank %}
+                                        <div class="map-info__item map-info__email d-flex mb-3 mb-xl-4">
+                                            <i class="icons me-3">
+                                                {% include 'icons', icon: 'email', attr: 'width="25"' %}
+                                            </i>
+                                            <div>
+                                                {{ contactinfoEmail }}
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                    {% if contactinfoTime != blank %}
+                                        <div class="map-info__item map-info__email d-flex">
+                                            <i class="icons me-3">
+                                                {% include 'icons', icon: 'clock-o' %}
+                                            </i>
+                                            <div>
+                                                {{ contactinfoTime }}
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7">
+                        <div class="contact-form">
+                            {%- form 'contact', id: 'ContactForm' -%}
+                                {%- if form.posted_successfully? -%}
+                                    <div class="alert-success alert alert-success" autofocus>
+                                        {{ 'templates.contact.form.post_success' | t }}
+                                    </div>
+                                {%- elsif form.errors -%}
+                                    <div class="alert-error alert alert-danger alert-dismissible fade show" autofocus>
+                                        {{ form.errors | default_errors }}
+                                        <button type="button" data-dismiss="alert" aria-hidden="true" data-bs-dismiss="alert" aria-label="Close" class="btn-close"></button>
+                                    </div>
+                                {%- endif -%}
+                                <div class="row g-4 mb-4 mb-xl-5">
+                                    <div class="col-12 col-sm-6">
+                                        <label class="form__label mb-2" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}<span class="text-danger" aria-hidden="true">*</span></label>
+                                        <input class="form-control" placeholder="{{ 'templates.contact.form.name' | t }}" type="text" id="{{ formId }}-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}" required>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label class="form__label mb-2" for="ContactForm-email">{{ 'templates.contact.form.email' | t }} <span class="text-danger" aria-hidden="true">*</span></label>
+                                        <input class="form-control"
+                                            placeholder="{{ 'templates.contact.form.email' | t }}"
+                                            type="email"
+                                            id="{{ formId }}-email"
+                                            name="contact[email]"
+                                            autocorrect="off"
+                                            autocapitalize="off"
+                                            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+                                            aria-required="true"
+                                            required
+                                            >
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form__label mb-2" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}<span class="text-danger" aria-hidden="true">*</span></label>
+                                        <textarea class="form-control" placeholder="{{ 'templates.contact.form.comment' | t }}" rows="6" id="{{ formId }}-message" name="contact[{{ 'templates.contact.form.comment' | t }}]" required>{% if form.body %}{{ form.body }}{% endif %}</textarea>
+                                    </div>
+                                </div>
+                                <div class="text-start">
+                                    <button type="submit" class="btn btn-contact-form btn-default py-2 px-4"><span>{{ 'templates.contact.form.send' | t }}</span></button>
+                                </div>
+                            {% endform %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+    </div>
+    {%- if section.settings.googlemap_iframe != blank -%}
+        <div class="contact_form__map d-flex w-100">
+            {{ section.settings.googlemap_iframe }}
+        </div>
+    {%- endif -%}
+</div>
+{% schema %}
+  	{
+        "name": "Contact Form 1",
+        "settings": [
+            {
+                "type": "header",
+                "content": "Design Section"
+            },
+            {
+                "type": "checkbox",
+                "id": "full_with",
+                "label": "Enabel Full Width?"
+            },
+            {
+                "type": "color",
+                "id": "color_bg",
+                "label": "Background Color",
+                "default": "rgba(0,0,0,0)"
+            },
+			{
+                "type": "image_picker",
+                "id": "contact-form-bg",
+                "label": "Background image"
+            },
+            {
+                "type": "text",
+                "id": "padding_block",
+                "label": "Padding",
+                "placeholder": "0px 0px",
+                "info": "Ex: 0px 0px 0px 0px and use desktop only"
+            },
+            {
+                "type": "text",
+                "id": "margin_block",
+                "label": "Margin",
+                "placeholder": "0px 0px",
+                "default": "0 0 30px",
+                "info": "Ex: 0px 0px 30px 0px"
+            },
+            {
+                "type": "header",
+                "content": "Contact info"
+            },
+            {
+                "type": "textarea",
+                "id": "googlemap_iframe",
+                "label": "Google Map Code",
+                "placeholder": "Embed Map"
+            },
+            {
+                "type": "text",
+                "id": "contactinfo_title",
+                "placeholder": "Title for Block",
+                "label": "Title"
+            },
+            {
+                "type": "textarea",
+                "id": "contactinfo_desc",
+                "label": "Description"
+            },
+            {
+                "type": "text",
+                "id": "contactinfo_add",
+                "label": "Adress"
+            },
+            {
+                "type": "text",
+                "id": "contactinfo_phone",
+                "label": "Phone"
+            },
+            {
+                "type": "text",
+                "id": "contactinfo_email",
+                "label": "Email"
+            },
+            {
+                "type": "textarea",
+                "id": "contactinfo_time",
+                "label": "Time"
+            },
+            {
+                "type": "header",
+                "content": "Contact form"
+            },
+			{
+				"type": "text",
+				"id": "heading",
+				"default": "Contact form",
+				"label": "Heading"
+			},
+            {
+				"type": "text",
+				"id": "subheading",
+				"default": "We're happy to answer questions or hear your feedback. Just fill out the form below.",
+				"label": "Sub heaing"
+			}
+		],
+        "presets": [
+            {
+                "name": "Contact Form 1",
+                "category": "4. element"
+            }
+        ]
+  	}
+{% endschema %}

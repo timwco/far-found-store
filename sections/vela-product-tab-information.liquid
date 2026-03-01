@@ -1,0 +1,170 @@
+
+    {%- if section.settings.color_bg != 'rgba(0,0,0,0)' -%}
+    {%- capture bgColor -%}
+        background-color: {{ section.settings.color_bg }};
+    {%- endcapture -%}
+    {%- endif -%}
+    {%- if section.settings.padding_block != blank -%}
+    {%- capture paddingblock -%}
+        padding: {{section.settings.padding_block}};
+    {%- endcapture -%}
+    {%- endif -%}
+    {%- if section.settings.margin_block != blank -%}
+    {%- capture marginblock -%}
+        margin: {{section.settings.margin_block}};
+    {%- endcapture -%}
+    {%- endif -%}
+    <div class="vela-section product-more-info" style="{{ bgColor}} {{ paddingblock }} {{ marginblock }}">
+        <div class="container{%- if section.settings.full_with -%}-full{%- endif -%}">
+            {%- if section.blocks.size > 0 -%}
+                <div class="product-more-info__inner mb-5">
+                    <div class="more-info-tabs__heading mb-3 mb-lg-4">
+                        <ul class="more-info-tabs__nav nav d-flex flex-wrap justify-content-center list-unstyled mb-1">
+                            {%- for block in section.blocks -%}
+                                {%- if block.type == "description" or block.settings.content != blank or block.settings.content_1 != blank -%}
+                                    <li class="more-info-tabs__nav-item">
+                                        <a class="more-info-tabs__nav-link {% if forloop.first %} active{% endif %}" data-bs-toggle="tab" href="#js-more-info-tabs-{{forloop.index}}">
+                                            {{ block.settings.heading  }}
+                                        </a>
+                                    </li>
+                                {%- endif -%}
+                                {%- if block.type == "review" and settings.product_reviews_enable -%}
+                                    <li class="more-info-tabs__nav-item">
+                                        <a class="more-info-tabs__nav-link {% if forloop.first %} active{% endif %}" data-bs-toggle="tab" href="#js-more-info-tabs-review">
+                                            {{- block.settings.review -}}
+                                        </a>
+                                    </li>
+                                {%- endif -%}
+                            {%- endfor -%}
+                        </ul>
+                    </div>
+                    <div class="more-info-tabs__content tab-content pt-3">
+                        {%- for block in section.blocks -%}
+                            <div id="js-more-info-tabs-{{forloop.index}}" class="tab-pane fade {% if forloop.first %}show active{% endif %}">
+                                <div class="rte">
+                                    {% if block.type == "description" %}
+                                        {{ product.description }}
+                                    {%- else -%}
+                                        {{ block.settings.content }}
+                                        {{ block.settings.content_1 }}
+                                        {%- if block.settings.image != blank -%}
+                                            <div class="more-info-tabs__image mb-2">
+                                                <img class="img-fluid lazyload" data-src="{{ block.settings.image | img_url: 'master'}}" data-size="auto" />
+                                            </div>
+                                        {%- endif -%}
+                                    {%- endif -%}
+                                </div>
+                            </div>
+                            {%- if block.type == "review" and settings.product_reviews_enable -%}
+                                <div id="js-more-info-tabs-review" class="tab-pane fade {% if forloop.first %}show active{% endif %}">
+                                    <div class="product-reviews">
+                                        <!-- Start of Judge.me code --> 
+                                        <div style='clear:both'></div> 
+                                        <div id='judgeme_product_reviews' class='jdgm-widget jdgm-review-widget' data-id='{{ product.id }}'> 
+                                            {{ product.metafields.judgeme.widget }} 
+                                        </div> 
+                                        <!-- End of Judge.me code -->
+                                    </div>
+                                </div>
+                            {%- endif -%}
+                        {%- endfor -%}
+                    </div>
+                </div>
+            {%- endif -%}
+        </div>
+    </div>
+{% schema %}
+{
+    "name": "Product tab information",
+    "tag": "section",
+    "settings": [
+        {
+            "type": "header",
+            "content": "Design Section"
+        },
+        {
+            "type": "checkbox",
+            "id": "full_with",
+            "label": "Enabel Full Width?"
+        },
+        {
+            "type": "color",
+            "id": "color_bg",
+            "label": "Background Color",
+            "default": "rgba(0,0,0,0)"
+        },
+        {
+            "type": "text",
+            "id": "padding_block",
+            "label": "Padding",
+            "placeholder": "0px 0px"
+        },
+        {
+            "type": "text",
+            "id": "margin_block",
+            "label": "Margin",
+            "placeholder": "0px 0px"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "description",
+            "name": "Description",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "html",
+                    "id": "heading",
+                    "default": "Tab heading",
+                    "info": "Include a heading that explains the content.",
+                    "label": "Heading"
+                }
+            ]
+        },
+        {
+            "type": "extra_tab",
+            "name": "Extra tab",
+            "limit": 5,
+            "settings": [
+                {
+                    "type": "html",
+                    "id": "heading",
+                    "default": "Tab heading",
+                    "info": "Include a heading that explains the content.",
+                    "label": "Heading"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "html",
+                    "id": "content",
+                    "label": "Tab content",
+                    "info": "HTML"
+                },
+                {
+                    "type": "richtext",
+                    "id": "content_1",
+                    "label": "Tab content"
+                }
+            ]
+        },
+        {
+            "type": "review",
+            "name": "Review",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "html",
+                    "id": "review",
+                    "default": "Reviews",
+                    "info": "Our theme supports Judge.me Product Reviews app. you can find it [here](https:\/\/apps.shopify.com\/judgeme)",
+                    "label": "Heading"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

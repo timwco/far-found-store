@@ -1,0 +1,58 @@
+<div class="footer-newsletter d-flex justify-content-md-end">
+	<div class="footer-newsletter__inner w-100">
+			<div class="footer-newsletter__heading mb-3">
+				{% if newsletterTitle != blank %}
+					<h5 class="footer__title py-1 py-md-2 mb-md-2">{{ newsletterTitle }}</h5>
+				{%- endif -%}             
+				{% if newsletterDesc != blank %}
+					<div class="footer-newsletter__desc pt-2">
+						{{- newsletterDesc -}}
+					</div>
+				{%- endif -%}
+			</div>
+			<div class="footer-newsletter-content">
+				{% if newsletterMailchimp %}
+					{%- assign form_action = block.settings.newsletter_form_action | replace: '/post?', '/post-json?' | append: '&amp;c=?' -%}
+					<form action="{{ form_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" class="js-vela-newsletter formNewsletter clearfix">			
+						<input type="hidden" name="contact[tags]" value="newsletter">
+						<div class="input-group">
+							<input class="js-input-newsletter form-control" type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'newsletter.newsletter_email' | t }}" name="EMAIL" id="mail" aria-label="{{ 'newsletter.newsletter_email' | t }}" aria-describedby="btn-newsletter" required>						
+							<span>
+								<button class="btn btn--newsletter px-3 px-sm-4" type="submit">
+									<span class="text">{{ 'newsletter.button_label' | t }}</span>
+									<i class="icons d-none">{% render 'icons', icon: 'paper-plane-o', attr: 'width="28"' %}</i>
+								</button>
+							</span>
+							
+						</div>
+					</form>
+				{% else %}
+					{% form 'customer' %}
+						{%- if form.errors -%}
+							<div class="alert-error alert alert-danger alert-dismissible fade show">
+								{{ form.errors | default_errors }}
+								<button type="button" data-dismiss="alert" aria-hidden="true" data-bs-dismiss="alert" aria-label="Close" class="btn-close"></button>
+							</div>
+						{%- endif -%}
+						{%- if form.posted_successfully? -%}
+							<div class="alert-success alert alert-success">
+								{{ 'newsletter.newsletter_confirmation' | t }}
+							</div>
+						{%- else -%}
+							<div class="input-group">
+								<input type="hidden" name="contact[tags]" value="newsletter">
+								<input class="form-control" id="newsletter-input" type="email" name="contact[email]" placeholder="{{ 'newsletter.newsletter_email' | t }}" required aria-describedby="btn-newsletter">
+								<span>
+									<button class="btn btn--newsletter px-3 px-sm-4" type="submit" aria-label="Center Align">
+										<span class="text">{{ 'newsletter.button_label' | t }}</span>
+										<i class="icons d-none">{% render 'icons', icon: 'paper-plane-o', attr: 'width="28"' %}</i>
+									</button>
+								</span>
+							</div>
+							<input type="hidden" name="action" value="0">
+						{%- endif -%}
+					{% endform %}
+				{% endif %}
+			</div>
+	</div>
+</div>

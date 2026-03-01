@@ -1,0 +1,22 @@
+/** Blog pages __*/
+.page-blog .article {
+  padding-bottom: 40px; }
+
+.page-blog .social-sharing {
+  margin-bottom: 0; }
+
+.page-header {
+  margin-bottom: 50px; }
+
+.article__title {
+  margin-bottom: 5px; }
+  .article__title a:hover {
+    color: var(--primary); }
+
+.article__read-more {
+  color: var(--primary); }
+  .article__read-more:hover {
+    color: var(--heading-color);
+    border-bottom-color: var(--heading-color); }
+
+/*# sourceMappingURL=section-main-blog.css.map */
