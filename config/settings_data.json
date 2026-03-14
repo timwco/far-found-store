@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "color_primary": "#a8b5a0",
-    "color_secondary": "#c4957a",
+    "color_primary": "#c4957a",
+    "color_secondary": "#a8b5a0",
     "color_body_text": "#1a1a1a",
     "color_text_light": "#888888",
     "color_headings": "#201f1f",
