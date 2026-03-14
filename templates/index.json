@@ -17,7 +17,7 @@
           "settings": {
             "content_color": "rgba(0,0,0,0)",
             "position_content": true,
-            "image": "shopify://shop_images/morning.jpg",
+            "image": "shopify://shop_images/daisy.jpg",
             "link": "shopify://collections/all",
             "alignment": "text-start align-middle",
             "text-alignment": "center",
