@@ -173,20 +173,6 @@
         "column4": 2
       }
     },
-    "1658915910fa8081ac": {
-      "type": "feature-text",
-      "settings": {
-        "full_with": false,
-        "color_bg": "rgba(0,0,0,0)",
-        "padding_block": "30px 0",
-        "margin_block": "0 0 70px",
-        "sub_heading": "New arrivals",
-        "heading": "Body cream organic",
-        "desc": "At vero eos et accusamus et iusto odi odgnissimos ducimusblanditiis praesentium volup.",
-        "button_text": "Discover now",
-        "button_url": "shopify://collections/new-products"
-      }
-    },
     "164256418835253c35": {
       "type": "blog-posts",
       "settings": {
@@ -194,7 +180,7 @@
         "color_bg": "rgba(0,0,0,0)",
         "padding_block": "30px 0",
         "margin_block": "0  0 70px",
-        "heading": "Our Blog",
+        "heading": "Tea Journal",
         "sub_heading": "News posuere augue, vitae condimentum sapien dignissim",
         "blog_handle": "news",
         "limit": 5,
@@ -619,7 +605,6 @@
     "162566980471ae6442",
     "164307378492842e70",
     "1643043758ec2c692d",
-    "1658915910fa8081ac",
     "164256418835253c35",
     "1658922293a102383d",
     "166012166362c59dc9",
