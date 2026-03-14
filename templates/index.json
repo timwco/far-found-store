@@ -17,10 +17,10 @@
           "settings": {
             "content_color": "rgba(0,0,0,0)",
             "position_content": true,
-            "image": "shopify://shop_images/daisy.jpg",
+            "image": "shopify://shop_images/morning2.jpg",
             "link": "shopify://collections/all",
-            "alignment": "text-center align-middle",
-            "text-alignment": "center",
+            "alignment": "text-start align-middle",
+            "text-alignment": "start",
             "slides_effect": "default",
             "subheading": "",
             "subheading_color": "#1f1f1f",
