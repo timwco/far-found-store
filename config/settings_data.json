@@ -93,7 +93,7 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "enable": true,
+          "enable": false,
           "full_with": true,
           "padding_block": "",
           "color_bg": "rgba(0,0,0,0)",
