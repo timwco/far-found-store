@@ -20,7 +20,7 @@
             "image": "shopify://shop_images/morning2.jpg",
             "image_mobile": "shopify://shop_images/morning3.jpg",
             "link": "shopify://collections/all",
-            "alignment": "text-start align-middle",
+            "alignment": "text-start align-bottom",
             "text-alignment": "start",
             "slides_effect": "default",
             "subheading": "",
