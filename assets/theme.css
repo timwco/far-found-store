@@ -1990,7 +1990,8 @@ h5, .h5 {
       .slideshow-caption__inner {
         padding: 20px 0; } }
   .slideshow-caption__content {
-    display: inline-block; }
+    display: inline-block;
+    max-width: 70%; }
   .slideshow-caption__subheading {
     line-height: 1;
     text-transform: uppercase; }
