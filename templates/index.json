@@ -42,9 +42,9 @@
             "btn_font_size": 14,
             "btn_link": "shopify://collections/new-products",
             "btn_padding": "18px 40px 16px",
-            "btn_text_color": "#222222",
+            "btn_text_color": "#ffffff",
             "btn_border_color": "#222222",
-            "btn_bg_color": "rgba(0,0,0,0)"
+            "btn_bg_color": "#1a1a1a"
           }
         }
       },
