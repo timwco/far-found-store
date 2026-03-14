@@ -1990,8 +1990,7 @@ h5, .h5 {
       .slideshow-caption__inner {
         padding: 20px 0; } }
   .slideshow-caption__content {
-    display: inline-block;
-    max-width: 70%; }
+    display: inline-block; }
   .slideshow-caption__subheading {
     line-height: 1;
     text-transform: uppercase; }
@@ -2043,7 +2042,7 @@ h5, .h5 {
   .slideshow-caption__desc {
     padding: 0;
     margin-top: 30px;
-    max-width: 500px;
+    max-width: 700px;
     width: 100%;
     display: inline-block; }
     @media (max-width: 767.98px) {
@@ -3181,7 +3180,8 @@ details[open] > .header__icon--menu .icon-hamburger {
   opacity: 0;
   visibility: hidden;
   z-index: 2;
-  transition: opacity 0.2s ease, visibility 0.2s ease; }
+  transition: opacity 0.2s ease,
+ visibility 0.2s ease; }
 
 menu-drawer > details[open] > summary::before {
   visibility: visible;
