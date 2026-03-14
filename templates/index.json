@@ -21,7 +21,7 @@
             "link": "shopify://collections/all",
             "alignment": "text-start align-middle",
             "text-alignment": "start",
-            "slides_effect": "default",
+            "slides_effect": "leftright",
             "subheading": "",
             "subheading_color": "#ffffff",
             "subheading_font_family": "h3",
