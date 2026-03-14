@@ -212,12 +212,13 @@
             "type": "contact_info",
             "settings": {
               "contactinfo_heading": "",
-              "contactinfo_logo_svg": "https://cdn.shopify.com/s/files/1/1573/5553/files/logo_dark.svg?v=1601695205",
+              "contactinfo_logo": "shopify://shop_images/logo.png",
+              "contactinfo_logo_svg": "",
               "logo_footer_width": 150,
               "contactinfo_desc": "",
-              "contactinfo_add": "Call us: 888.312.2456 - 666.010.1238",
-              "contactinfo_phone": "Text: 200.490.1520 - 666.010.1238",
-              "contactinfo_email": "Email: <a href=\"mailto:support@domain.vn\">support@domain.vn</a>",
+              "contactinfo_add": "",
+              "contactinfo_phone": "",
+              "contactinfo_email": "Email: <a href=\"mailto:support@farandfoundtea.com\">support@farandfoundtea.com</a>",
               "contactinfo_time": "",
               "social_enable": true
             }
@@ -249,7 +250,7 @@
             "type": "copyright",
             "settings": {
               "enable_country_selector": false,
-              "footer_copyright": "Copyright © Velatheme. All Right Reserved.",
+              "footer_copyright": "Copyright © Far & Found Tea Company. All Right Reserved.",
               "payment_enable": true
             }
           }
