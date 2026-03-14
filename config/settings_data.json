@@ -1,1 +1,269 @@
-{"current":{"color_primary":"#A8B5A0","color_secondary":"#C4957A","color_body_text":"#555555","color_text_light":"#888888","color_headings":"#1A1A1A","color_border":"#E0E3DF","color_header_text":"#1A1A1A","color_header_bg":"#ffffff","color_footer_heading":"#1A1A1A","color_footer_text":"#888888","color_footer_link":"#888888","color_footer_link_hover":"#A8B5A0","color_footer_bg":"#F2F4F1","color_copyright_bg":"#F2F4F1","color_copyright":"#888888","color_menu_bg":"rgba(0,0,0,0)","color_menu_text":"#1A1A1A","color_menu_text_hover":"#A8B5A0","color_submenu_text":"#888888","color_submenu_text_hover":"#A8B5A0","color_btn":"#1A1A1A","color_btn_border":"#1A1A1A","color_btn_bg":"#ffffff","color_btn_hover_border":"#A8B5A0","color_btn_hover_bg":"#A8B5A0","breadcrumb_color":"#888888","breadcrumb_heading_color":"#1A1A1A","breadcrumb_color_link":"#1A1A1A","type_header_font":"josefin_sans_n6","type_header_base_size":40,"type_body_font":"josefin_sans_n4","type_base_size":16,"type_special_link":"","type_special_font":"","type_menu_size":18,"tyep_menu_dropdown_size":16,"preloading":false,"quickview_enable":true,"quickview_proshortdesc":true,"quickview_prosku":true,"quickview_availability":true,"quickview_protype":false,"quickview_vendor":true,"quickview_quantity_selector":"text","quickview_variant_selector":"radio","quickview_variant_image_enable":false,"quickview_text":"","cart_type":"modal","cart_notes_enable":false,"social_twitter_link":"https://twitter.com","social_facebook_link":"https://facebook.com","social_pinterest_link":"","social_instagram_link":"http://instagram.com","social_tiktok_link":"","social_youtube_link":"","image_ratio":"adapt","show_secondary_image":true,"product_card_review":false,"product_card_sale":true,"product_card_available":true,"product_card_new":false,"product_vendor_enable":false,"product_card_shortdesc":false,"product_card_tax":true,"product_card_swatch":false,"cookie_consent_enable":false,"newsletter_popup_color_bg":"#ffffff","newsletter_popup_image":"shopify://shop_images/newslettermodal.png","newsletter_popup_title":"Subscribe today get 20% Off","newsletter_title_color":"#1A1A1A","newsletter_popup_html":"Don\u2019t miss out on thousands of cool products &amp; promotions","newsletter_html_color":"#888888","newsletter_popup_form_action":"https://velatheme.us13.list-manage.com/subscribe/post?u=4d8c80acdd82f3c48d27467f6&amp;id=d52e6e4f14","favicon":"shopify://shop_images/service-1.png","checkout_logo_image":"shopify://shop_images/logo-outstock.png","checkout_accent_color":"#A8B5A0","checkout_button_color":"#1A1A1A","show_multiple_currencies":false,"currency_format":"money_format","sections":{"announcement-bar":{"type":"announcement-bar","settings":{"enable":false,"full_with":false,"padding_block":"","color_bg":"rgba(0,0,0,0)","color_top_text":"#707070","color_top_link":"#707070","font-size":14,"text":"Free shipping on all orders over <u>$79</u> <a href=\"/collections/all\" class=\"bg-primary py-1 px-2 text-white\">Shop Now!</a>"}},"header":{"type":"header","blocks":{"07130ceb-8673-4a8d-bb83-d13fb75db6b3":{"type":"menu","settings":{"title":"Shops","menu_width":"1400","menu_align":"start-0 end-0","menu":true,"menu_order":"2","menu_col":"100","menu_menu_col":"20","products":false,"products_order":"3","products_col":"33","products_title":"","products_collection":"frontpage","products_limit":"2","html":false,"html_order":"5","html_col":"100","html_title":"","html_content":"<div class=\"row g-3 row-cols-md-4\">\n    <div class=\"col\"> \n        <a href=\"/collections/furniture\" title=\"furniture\">\n            <img class=\"img-fluid w-100\" src=\"https://cdn.shopify.com/s/files/1/1448/8252/files/menu1.jpg?v=1639103788\" loading=\"lazy\">\n        </a>\n    </div>\n    <div class=\"col\"> \n        <a href=\"/collections/furniture\" title=\"furniture\">\n            <img class=\"img-fluid w-100\" src=\"https://cdn.shopify.com/s/files/1/1448/8252/files/menu2.jpg?v=1639103789\" loading=\"lazy\">\n        </a>\n    </div>\n    <div class=\"col\"> \n        <a href=\"/collections/furniture\" title=\"furniture\">\n            <img class=\"img-fluid w-100\" src=\"https://cdn.shopify.com/s/files/1/1448/8252/files/menu3.jpg?v=1639103788\" loading=\"lazy\">\n        </a>\n    </div>\n    <div class=\"col\"> \n        <a href=\"/collections/furniture\" title=\"furniture\">\n            <img class=\"img-fluid w-100\" src=\"https://cdn.shopify.com/s/files/1/1448/8252/files/menu4.jpg?v=1639103788\" loading=\"lazy\">\n        </a>\n    </div>\n</div>","banner":false,"banner_order":"4","banner_col":"33","banner_link":"shopify://collections/frontpage","collection_enable":false,"collection_order":"5","collection_title":"","colllection_col":"20","colllection_col_item":"20","velamenu_list_collection1":"","velamenu_list_collection2":"","velamenu_list_collection3":"","velamenu_list_collection4":"","velamenu_list_collection5":"","velamenu_list_collection6":"","velamenu_list_collection7":"","velamenu_list_collection8":"","velamenu_list_collection9":"","velamenu_list_collection10":""}},"ed7e3a02-0946-497d-8424-5a5c56a0fbb5":{"type":"menu","settings":{"title":"Collections","menu_width":"1400","menu_align":"start-0 end-0","menu":false,"menu_order":"1","menu_col":"20","menu_menu_col":"20","products":false,"products_order":"2","products_col":"20","products_title":"","products_collection":"","products_limit":"2","html":false,"html_order":"3","html_col":"20","html_title":"","html_content":"","banner":false,"banner_order":"4","banner_col":"20","banner_link":"","collection_enable":true,"collection_order":"5","collection_title":"","colllection_col":"100","colllection_col_item":"20","velamenu_list_collection1":"new-products","velamenu_list_collection2":"beauty","velamenu_list_collection3":"make-up","velamenu_list_collection4":"skin-care","velamenu_list_collection5":"spa","velamenu_list_collection6":"","velamenu_list_collection7":"","velamenu_list_collection8":"","velamenu_list_collection9":"","velamenu_list_collection10":""}}},"block_order":["07130ceb-8673-4a8d-bb83-d13fb75db6b3","ed7e3a02-0946-497d-8424-5a5c56a0fbb5"],"settings":{"fullwidth":true,"padding_block":"24px 0","logo_svg":"https://cdn.shopify.com/s/files/1/1573/5553/files/logo_dark.svg?v=1601695205","logo_width":150,"menu":"main-menu","enable_sticky_header":false}},"footer":{"type":"footer","blocks":{"eb95aebb-991a-46a6-8ccc-2a7c4ce80a1b":{"type":"contact_info","settings":{"contactinfo_heading":"","contactinfo_logo_svg":"https://cdn.shopify.com/s/files/1/1573/5553/files/logo_dark.svg?v=1601695205","logo_footer_width":150,"contactinfo_desc":"","contactinfo_add":"Call us: 888.312.2456 - 666.010.1238","contactinfo_phone":"Text: 200.490.1520 - 666.010.1238","contactinfo_email":"Email: <a href=\"mailto:support@domain.vn\">support@domain.vn</a>","contactinfo_time":"","social_enable":true}},"70983933-17cd-45a0-bcc5-d614521caf18":{"type":"link_list","settings":{"title":"Menu","menu":"footer"}},"efc937e0-642e-4e4c-ada0-1d76f486880d":{"type":"link_list","settings":{"title":"Services","menu":"our-service"}},"a0091743-73be-4735-b63f-79b5725ac294":{"type":"newsletter","settings":{"newsletter_title":"Newsletter Sign Up","newsletter_description":"Sign up for the weekly newsletter and build better ecommerce stores.","newsletter_mailchimp":false,"newsletter_form_action":""}},"758f0291-59d6-499b-b9be-f7f625afdce6":{"type":"copyright","settings":{"enable_country_selector":false,"footer_copyright":"Copyright \u00a9 Velatheme. All Right Reserved.","payment_enable":true,"payment_image":"shopify://shop_images/payment-logo.png"}}},"block_order":["eb95aebb-991a-46a6-8ccc-2a7c4ce80a1b","70983933-17cd-45a0-bcc5-d614521caf18","efc937e0-642e-4e4c-ada0-1d76f486880d","a0091743-73be-4735-b63f-79b5725ac294","758f0291-59d6-499b-b9be-f7f625afdce6"],"settings":{}}},"content_for_index":[],"blocks":{"14060646107696862457":{"type":"shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","disabled":false,"settings":{}}},"color_btn_hover":"#1A1A1A"}}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "color_primary": "#a8b5a0",
+    "color_secondary": "#c4957a",
+    "color_body_text": "#1a1a1a",
+    "color_text_light": "#888888",
+    "color_headings": "#201f1f",
+    "color_border": "#e1e1e1",
+    "color_header_text": "#333333",
+    "color_header_bg": "#ffffff",
+    "color_footer_heading": "#201f1f",
+    "color_footer_text": "#54504f",
+    "color_footer_link": "#54504f",
+    "color_footer_link_hover": "#c4957a",
+    "color_footer_bg": "#f8f3ef",
+    "color_copyright_bg": "#f8f3ef",
+    "color_copyright": "#54504f",
+    "color_menu_bg": "rgba(0,0,0,0)",
+    "color_menu_text": "#222222",
+    "color_menu_text_hover": "#c4957a",
+    "color_submenu_text": "#666666",
+    "color_submenu_text_hover": "#c4957a",
+    "color_btn": "#1a1a1a",
+    "color_btn_border": "#1a1a1a",
+    "color_btn_bg": "#ffffff",
+    "color_btn_hover_border": "#c4957a",
+    "color_btn_hover_bg": "#c4957a",
+    "breadcrumb_color": "#888888",
+    "breadcrumb_heading_color": "#1a1a1a",
+    "breadcrumb_color_link": "#1a1a1a",
+    "type_header_font": "crimson_text_n4",
+    "type_header_base_size": 40,
+    "type_body_font": "montserrat_n4",
+    "type_base_size": 16,
+    "type_special_link": "",
+    "type_special_font": "",
+    "type_menu_size": 18,
+    "tyep_menu_dropdown_size": 16,
+    "preloading": false,
+    "quickview_enable": true,
+    "quickview_proshortdesc": true,
+    "quickview_prosku": true,
+    "quickview_availability": true,
+    "quickview_protype": false,
+    "quickview_vendor": true,
+    "quickview_quantity_selector": "text",
+    "quickview_variant_selector": "radio",
+    "quickview_variant_image_enable": false,
+    "quickview_text": "",
+    "cart_type": "modal",
+    "cart_notes_enable": false,
+    "social_twitter_link": "",
+    "social_facebook_link": "https://www.facebook.com/farandfoundtea/",
+    "social_pinterest_link": "",
+    "social_instagram_link": "https://www.instagram.com/farandfoundtea/",
+    "social_tiktok_link": "",
+    "social_youtube_link": "",
+    "image_ratio": "adapt",
+    "show_secondary_image": true,
+    "product_card_review": false,
+    "product_card_sale": true,
+    "product_card_available": true,
+    "product_card_new": false,
+    "product_vendor_enable": false,
+    "product_card_shortdesc": false,
+    "product_card_tax": true,
+    "product_card_swatch": false,
+    "cookie_consent_enable": false,
+    "newsletter_popup_enable": false,
+    "newsletter_popup_color_bg": "#ffffff",
+    "newsletter_popup_image": "shopify://shop_images/newslettermodal.png",
+    "newsletter_popup_title": "Subscribe today get 20% Off",
+    "newsletter_title_color": "#161616",
+    "newsletter_popup_html": "Don’t miss out on thousands of cool products &amp; promotions",
+    "newsletter_html_color": "#646464",
+    "newsletter_popup_form_action": "https://velatheme.us13.list-manage.com/subscribe/post?u=4d8c80acdd82f3c48d27467f6&amp;id=d52e6e4f14",
+    "favicon": "shopify://shop_images/circle.png",
+    "checkout_logo_image": "shopify://shop_images/logo-outstock.png",
+    "checkout_accent_color": "#54504f",
+    "checkout_button_color": "#161311",
+    "show_multiple_currencies": false,
+    "currency_format": "money_format",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "enable": true,
+          "full_with": true,
+          "padding_block": "",
+          "color_bg": "rgba(0,0,0,0)",
+          "color_top_text": "#707070",
+          "color_top_link": "#707070",
+          "font-size": 14,
+          "text": "Free shipping on all orders over <u>$79</u> <a href=\"/collections/all\" class=\"bg-primary py-1 px-2 text-white\">Shop Now!</a>"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "07130ceb-8673-4a8d-bb83-d13fb75db6b3": {
+            "type": "menu",
+            "settings": {
+              "title": "Shops",
+              "menu_width": "1400",
+              "menu_align": "start-0 end-0",
+              "menu": true,
+              "menu_order": "2",
+              "menu_col": "100",
+              "menu_menu_col": "20",
+              "products": false,
+              "products_order": "3",
+              "products_col": "33",
+              "products_title": "",
+              "products_collection": "frontpage",
+              "products_limit": "2",
+              "html": false,
+              "html_order": "5",
+              "html_col": "100",
+              "html_title": "",
+              "html_content": "<div class=\"row g-3 row-cols-md-4\">\n    <div class=\"col\"> \n        <a href=\"/collections/furniture\" title=\"furniture\">\n            <img class=\"img-fluid w-100\" src=\"https://cdn.shopify.com/s/files/1/1448/8252/files/menu1.jpg?v=1639103788\" loading=\"lazy\">\n        </a>\n    </div>\n    <div class=\"col\"> \n        <a href=\"/collections/furniture\" title=\"furniture\">\n            <img class=\"img-fluid w-100\" src=\"https://cdn.shopify.com/s/files/1/1448/8252/files/menu2.jpg?v=1639103789\" loading=\"lazy\">\n        </a>\n    </div>\n    <div class=\"col\"> \n        <a href=\"/collections/furniture\" title=\"furniture\">\n            <img class=\"img-fluid w-100\" src=\"https://cdn.shopify.com/s/files/1/1448/8252/files/menu3.jpg?v=1639103788\" loading=\"lazy\">\n        </a>\n    </div>\n    <div class=\"col\"> \n        <a href=\"/collections/furniture\" title=\"furniture\">\n            <img class=\"img-fluid w-100\" src=\"https://cdn.shopify.com/s/files/1/1448/8252/files/menu4.jpg?v=1639103788\" loading=\"lazy\">\n        </a>\n    </div>\n</div>",
+              "banner": false,
+              "banner_order": "4",
+              "banner_col": "33",
+              "banner_link": "shopify://collections/frontpage",
+              "collection_enable": false,
+              "collection_order": "5",
+              "collection_title": "",
+              "colllection_col": "20",
+              "colllection_col_item": "20",
+              "velamenu_list_collection1": "",
+              "velamenu_list_collection2": "",
+              "velamenu_list_collection3": "",
+              "velamenu_list_collection4": "",
+              "velamenu_list_collection5": "",
+              "velamenu_list_collection6": "",
+              "velamenu_list_collection7": "",
+              "velamenu_list_collection8": "",
+              "velamenu_list_collection9": "",
+              "velamenu_list_collection10": ""
+            }
+          },
+          "ed7e3a02-0946-497d-8424-5a5c56a0fbb5": {
+            "type": "menu",
+            "settings": {
+              "title": "Collections",
+              "menu_width": "1400",
+              "menu_align": "start-0 end-0",
+              "menu": false,
+              "menu_order": "1",
+              "menu_col": "20",
+              "menu_menu_col": "20",
+              "products": false,
+              "products_order": "2",
+              "products_col": "20",
+              "products_title": "",
+              "products_collection": "",
+              "products_limit": "2",
+              "html": false,
+              "html_order": "3",
+              "html_col": "20",
+              "html_title": "",
+              "html_content": "",
+              "banner": false,
+              "banner_order": "4",
+              "banner_col": "20",
+              "banner_link": "",
+              "collection_enable": true,
+              "collection_order": "5",
+              "collection_title": "",
+              "colllection_col": "100",
+              "colllection_col_item": "20",
+              "velamenu_list_collection1": "new-products",
+              "velamenu_list_collection2": "beauty",
+              "velamenu_list_collection3": "make-up",
+              "velamenu_list_collection4": "skin-care",
+              "velamenu_list_collection5": "spa",
+              "velamenu_list_collection6": "",
+              "velamenu_list_collection7": "",
+              "velamenu_list_collection8": "",
+              "velamenu_list_collection9": "",
+              "velamenu_list_collection10": ""
+            }
+          }
+        },
+        "block_order": [
+          "07130ceb-8673-4a8d-bb83-d13fb75db6b3",
+          "ed7e3a02-0946-497d-8424-5a5c56a0fbb5"
+        ],
+        "settings": {
+          "fullwidth": true,
+          "padding_block": "24px 0",
+          "logo": "shopify://shop_images/logo.png",
+          "logo_svg": "",
+          "logo_width": 150,
+          "menu": "main-menu",
+          "enable_sticky_header": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "eb95aebb-991a-46a6-8ccc-2a7c4ce80a1b": {
+            "type": "contact_info",
+            "settings": {
+              "contactinfo_heading": "",
+              "contactinfo_logo_svg": "https://cdn.shopify.com/s/files/1/1573/5553/files/logo_dark.svg?v=1601695205",
+              "logo_footer_width": 150,
+              "contactinfo_desc": "",
+              "contactinfo_add": "Call us: 888.312.2456 - 666.010.1238",
+              "contactinfo_phone": "Text: 200.490.1520 - 666.010.1238",
+              "contactinfo_email": "Email: <a href=\"mailto:support@domain.vn\">support@domain.vn</a>",
+              "contactinfo_time": "",
+              "social_enable": true
+            }
+          },
+          "70983933-17cd-45a0-bcc5-d614521caf18": {
+            "type": "link_list",
+            "settings": {
+              "title": "Menu",
+              "menu": "footer"
+            }
+          },
+          "efc937e0-642e-4e4c-ada0-1d76f486880d": {
+            "type": "link_list",
+            "settings": {
+              "title": "Services",
+              "menu": ""
+            }
+          },
+          "a0091743-73be-4735-b63f-79b5725ac294": {
+            "type": "newsletter",
+            "settings": {
+              "newsletter_title": "Newsletter Sign Up",
+              "newsletter_description": "Sign up for the weekly newsletter and build better ecommerce stores.",
+              "newsletter_mailchimp": false,
+              "newsletter_form_action": ""
+            }
+          },
+          "758f0291-59d6-499b-b9be-f7f625afdce6": {
+            "type": "copyright",
+            "settings": {
+              "enable_country_selector": false,
+              "footer_copyright": "Copyright © Velatheme. All Right Reserved.",
+              "payment_enable": true
+            }
+          }
+        },
+        "block_order": [
+          "eb95aebb-991a-46a6-8ccc-2a7c4ce80a1b",
+          "70983933-17cd-45a0-bcc5-d614521caf18",
+          "efc937e0-642e-4e4c-ada0-1d76f486880d",
+          "a0091743-73be-4735-b63f-79b5725ac294",
+          "758f0291-59d6-499b-b9be-f7f625afdce6"
+        ],
+        "settings": {}
+      }
+    },
+    "content_for_index": []
+  }
+}
